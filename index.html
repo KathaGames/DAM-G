@@ -3,54 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DAM-G: Project Agni</title>
+    <title>DAM-G: Project Agni | The Endless Zombie Shooter</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #1a1a1a; color: white; text-align: center; }
-        header { background: linear-gradient(90deg, #ff4e50, #f9d423); padding: 50px 20px; }
-        h1 { font-size: 3em; margin: 0; text-transform: uppercase; letter-spacing: 5px; text-shadow: 2px 2px 4px #000; }
-        h2 { color: #f9d423; }
+        header { background: linear-gradient(90deg, #ff4e50, #f9d423); padding: 40px 20px; }
+        
+        .game-icon { width: 120px; border-radius: 20px; margin-bottom: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+        h1 { font-size: 2.5em; margin: 0; text-transform: uppercase; letter-spacing: 3px; text-shadow: 2px 2px 4px #000; }
+        h2 { color: #f9d423; margin-top: 30px; }
+        
         .hero { padding: 40px 20px; }
         
-        /* Updated Button Style for UPI */
-        .btn { 
-            background-color: #0070e0; /* UPI Blue */
+        /* UPI Buy Button */
+        .btn-buy { 
+            background-color: #0070e0; 
             color: white; 
-            padding: 15px 40px; 
+            padding: 18px 40px; 
             text-decoration: none; 
-            font-size: 1.3em; 
-            border-radius: 8px; 
+            font-size: 1.4em; 
+            border-radius: 50px; 
             font-weight: bold; 
             display: inline-block;
-            transition: transform 0.2s, background-color 0.2s;
-            box-shadow: 0 4px 15px rgba(0, 112, 224, 0.4);
+            transition: 0.3s;
+            box-shadow: 0 6px 20px rgba(0, 112, 224, 0.4);
+            margin-bottom: 20px;
         }
-        .btn:hover { 
-            background-color: #005bb5; 
-            transform: translateY(-2px);
+        .btn-buy:hover { background-color: #005bb5; transform: scale(1.05); }
+
+        /* Screenshot Gallery */
+        .gallery { 
+            display: flex; 
+            overflow-x: auto; 
+            gap: 15px; 
+            padding: 20px; 
+            justify-content: center;
+            background: #111;
         }
-        
+        .gallery img { 
+            height: 200px; 
+            border-radius: 10px; 
+            border: 2px solid #333;
+            transition: 0.3s;
+        }
+        .gallery img:hover { border-color: #f9d423; }
+
         .features { padding: 40px 20px; background-color: #2a2a2a; }
-        .footer { padding: 20px; font-size: 0.8em; color: #888; }
-        a { color: #f9d423; }
+        .footer { padding: 30px; font-size: 0.85em; color: #888; border-top: 1px solid #333; }
+        a { color: #f9d423; text-decoration: none; }
     </style>
 </head>
 <body>
 
     <header>
+        <img src="iconA1.png" alt="DAM-G Icon" class="game-icon">
         <h1>DAM-G</h1>
-        <p>PROJECT AGNI | THE ENDLESS ZOMBIE SHOOTER</p>
+        <p>DAMODAR AGNI MANUSHYA GARJANA</p>
     </header>
 
     <div class="hero">
         <h2>Save Bharat from the Invasion.</h2>
         <p>Join <b>Inspector Damodar</b> and the Elite Warriors to stop the Zombie Ghuspaithiyas.</p>
-        <br><br>
+        <br>
         
-        <a href="YOUR_PAYMENT_LINK_OR_UPI_ID_HERE" class="btn">
+        <a href="https://www.indusappstore.com/apps/action/dam-g/com.BhaaratKathaGames.Damg.shooter/?page=details&id=com.BhaaratKathaGames.Damg.shooter" class="btn-buy">
             Buy Rs 29/- with UPI
         </a>
-        
-        <p style="margin-top: 15px; font-size: 0.9em; color: #aaa;">Instant Access via Email after Payment</p>
+        <p><small>Available on Indus Appstore</small></p>
+    </div>
+
+    <div class="gallery">
+        <img src="ss1.jpg" alt="Inspector Damodar Profile">
+        <img src="ss4.jpg" alt="Jignesh Hero Selection">
+        <img src="ss5.jpg" alt="Gameplay Action">
+        <img src="ss3.png" alt="Combat Mode">
     </div>
 
     <div class="features">
@@ -61,8 +86,9 @@
     </div>
 
     <div class="footer">
+        <p>Developed by <b>KathaGames Studio</b></p>
         <p>Contact: <a href="mailto:kathagames@zohomail.in">kathagames@zohomail.in</a></p>
-        <p><a href="privacy-policy.html">Privacy Policy</a></p>
+        <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="https://www.indusappstore.com/apps/action/dam-g/com.BhaaratKathaGames.Damg.shooter/">View on Appstore</a></p>
         <p>&copy; 2026 KathaGames Studio.</p>
     </div>
 
