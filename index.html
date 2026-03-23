@@ -10,8 +10,25 @@
         h1 { font-size: 3em; margin: 0; text-transform: uppercase; letter-spacing: 5px; text-shadow: 2px 2px 4px #000; }
         h2 { color: #f9d423; }
         .hero { padding: 40px 20px; }
-        .btn { background-color: #25D366; color: white; padding: 15px 30px; text-decoration: none; font-size: 1.2em; border-radius: 5px; font-weight: bold; }
-        .btn:hover { background-color: #128C7E; }
+        
+        /* Updated Button Style for UPI */
+        .btn { 
+            background-color: #0070e0; /* UPI Blue */
+            color: white; 
+            padding: 15px 40px; 
+            text-decoration: none; 
+            font-size: 1.3em; 
+            border-radius: 8px; 
+            font-weight: bold; 
+            display: inline-block;
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 4px 15px rgba(0, 112, 224, 0.4);
+        }
+        .btn:hover { 
+            background-color: #005bb5; 
+            transform: translateY(-2px);
+        }
+        
         .features { padding: 40px 20px; background-color: #2a2a2a; }
         .footer { padding: 20px; font-size: 0.8em; color: #888; }
         a { color: #f9d423; }
@@ -27,8 +44,13 @@
     <div class="hero">
         <h2>Save Bharat from the Invasion.</h2>
         <p>Join <b>Inspector Damodar</b> and the Elite Warriors to stop the Zombie Ghuspaithiyas.</p>
-        <br>
-        <a href="#" class="btn">Coming Soon to Indus Appstore</a>
+        <br><br>
+        
+        <a href="YOUR_PAYMENT_LINK_OR_UPI_ID_HERE" class="btn">
+            Buy Rs 29/- with UPI
+        </a>
+        
+        <p style="margin-top: 15px; font-size: 0.9em; color: #aaa;">Instant Access via Email after Payment</p>
     </div>
 
     <div class="features">
@@ -39,7 +61,7 @@
     </div>
 
     <div class="footer">
-        <p>Contact: <a href="mailto:YOUR_EMAIL_HERE">kathagames@zohomail.in</a></p>
+        <p>Contact: <a href="mailto:kathagames@zohomail.in">kathagames@zohomail.in</a></p>
         <p><a href="privacy-policy.html">Privacy Policy</a></p>
         <p>&copy; 2026 KathaGames Studio.</p>
     </div>
